@@ -113,29 +113,11 @@ rss:
   # - 正整数：覆盖全局设置，只推送此天数内的文章
   # - 0：禁用此频道的新鲜度过滤，推送所有文章
 feeds:
-  - id: "微博·武汉超话"
-    name: "微博·武汉超话"
-    url: "https://www.yahoo.com/news/rss"
-  
-  - id: "知乎·武汉话题"
-    name: "知乎·武汉话题"
-    url: "https://rsshub.app/zhihu/topic/19557367"
-  
-  - id: "豆瓣·武汉小组"
-    name: "豆瓣·武汉小组"
-    url: "https://rsshub.app/douban/group/wh"
-  
-  - id: "湖北省政府要闻"
-    name: "湖北省政府要闻"
-    url: "https://rsshub.app/gov/province/hubei"
-  
-  - id: "长江日报武汉频道"
-    name: "长江日报武汉频道"
-    url: "https://rsshub.app/any/rss?url=https%3A%2F%2Fwww.cjn.cn%2Fwh&title=武汉新闻"
-  
-  - id: "武汉交警微博"
-    name: "武汉交警微博"
-    url: "https://rsshub.app/weibo/user/5925417375"
+    - id: "虎扑"
+      name: "虎扑"
+      url: "https://rsshub.friesport.ac.cn/hupu/bbs/topic-daily"
+      max_age_days: 10000
+
     # 自定义源示例
     # - id: "custom-feed"
     #   name: "自定义源"
@@ -462,7 +444,7 @@ ai:
 # 模型配置见上方 ai 配置段
 # ===============================================================
 ai_analysis:
-  enabled: true                     # 是否启用 AI 分析（总开关）
+  enabled: false                     # 是否启用 AI 分析（总开关）
                                     # ⚠️ 开启调度系统后，此项仍为总开关：
                                     #   false → 永远不分析（无论调度怎么设置）
                                     #   true  → 由调度的 analyze 字段控制何时分析
@@ -501,7 +483,7 @@ ai_analysis:
                                       # GitHub Action 部署默认推送约 20 次（每小时推送一次）， 约 0.1 元/天
                                       # Docker 部署默认推送 48 次(每半小时推送一次)， 约 0.2 元/天
 
-  include_rss: false                # 是否包含 RSS 内容进行分析
+  include_rss: true                # 是否包含 RSS 内容进行分析
   
   include_standalone: true          # 是否将独立展示区数据纳入 AI 分析
                                     # 数据源列表来自 display.standalone.platforms / display.standalone.rss_feeds
@@ -521,7 +503,7 @@ ai_analysis:
 # 模型配置见上方 ai 配置段
 # ===============================================================
 ai_translation:
-  enabled: true                    # 是否启用翻译功能
+  enabled: false                    # 是否启用翻译功能
 
   # 翻译目标语言
   # 格式：自然语言描述
