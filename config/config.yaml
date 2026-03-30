@@ -119,6 +119,10 @@ feeds:
       max_age_days: 10000
 
 
+    - id: "a"
+      name: "a"
+      url: "https://rsshub.rssforever.com/cw/master/8"
+      max_age_days: 10000
 
 
 
@@ -258,7 +262,7 @@ display:
     standalone: true # 独立展示区（完整热榜/RSS，不受关键词过滤）
     ai_analysis: false # AI 分析区域
   standalone:
-    rss_feeds: ["q"]                     # RSS 源 ID 列表（如 ["hacker-news"]）
+    rss_feeds: ["a"]                     # RSS 源 ID 列表（如 ["hacker-news"]）
     max_items: 0                     # 每个源最多展示条数（0=不限制）
 
 
