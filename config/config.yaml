@@ -113,8 +113,8 @@ rss:
   # - 正整数：覆盖全局设置，只推送此天数内的文章
   # - 0：禁用此频道的新鲜度过滤，推送所有文章
 feeds:
-    - id: "q'q'q'q'q"
-      name: "qqqq"
+    - id: "q"
+      name: "q"
       url: "https://www.bing.com/news/search?q=全球新闻&format=RSS"
       max_age_days: 10000
 
@@ -258,9 +258,8 @@ display:
     standalone: true # 独立展示区（完整热榜/RSS，不受关键词过滤）
     ai_analysis: false # AI 分析区域
   standalone:
-    platforms: ["baidu","thepaper","cls-hot","bilibili-hot-search","wallstreetcn-hot","toutiao","tieba","douyin","weibo","zhihu","ifeng"] # 热榜平台 ID 列表（如 ["zhihu", "weibo"]）
-    rss_feeds: ["q'q'q'q'q"]                     # RSS 源 ID 列表（如 ["hacker-news"]）
-    max_items: 20                     # 每个源最多展示条数（0=不限制）
+    rss_feeds: ["q"]                     # RSS 源 ID 列表（如 ["hacker-news"]）
+    max_items: 0                     # 每个源最多展示条数（0=不限制）
 
 
 # ===============================================================
