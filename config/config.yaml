@@ -113,28 +113,129 @@ rss:
   # - 正整数：覆盖全局设置，只推送此天数内的文章
   # - 0：禁用此频道的新鲜度过滤，推送所有文章
   feeds:
+     # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    # 🌆 武汉核心政务（必选）
+    # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    - id: "wuhan-gov-whyw"
+      name: "武汉要闻"
+      url: "https://rsshub.rssforever.com/gov/wuhan/sy/whyw"
+      max_age_days: 10000
+    - id: "wuhan-gov-gg"
+      name: "武汉公告"
+      url: "https://rsshub.rssforever.com/gov/wuhan/gg"
+      max_age_days: 10000
+    - id: "hubei-gov"
+      name: "湖北省政府"
+      url: "https://rsshub.rssforever.com/gov/hubei"
+      max_age_days: 10000
+    
+    # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    # 📰 本地权威媒体
+    # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    - id: "changjiang-daily"
+      name: "长江日报"
+      url: "https://rsshub.rssforever.com/changjiang"
+      max_age_days: 3
+    - id: "hubei-daily"
+      name: "湖北日报"
+      url: "https://rsshub.rssforever.com/hubei"
+      max_age_days: 3
+    - id: "wuhan-tv"
+      name: "武汉广播电视台"
+      url: "https://rsshub.rssforever.com/whtv"
+      max_age_days: 3
+    
+    # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    # 🎓 高校动态
+    # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    - id: "whu-news"
+      name: "武汉大学"
+      url: "https://rsshub.rssforever.com/whu/news"
+      max_age_days: 3
+    - id: "hust-news"
+      name: "华中科技大学"
+      url: "https://rsshub.rssforever.com/hust/news"
+      max_age_days: 3
+    - id: "ccnu-news"
+      name: "华中师范大学"
+      url: "https://rsshub.rssforever.com/ccnu/news"
+      max_age_days: 3
+    
+    # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    # 🔍 全网聚合（核心推荐！）
+    # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    - id: "baidu-wuhan"
+      name: "百度武汉新闻"
+      url: "https://rsshub.rssforever.com/baidu/search/news/武汉"
+      max_age_days: 1
+    - id: "weibo-wuhan"
+      name: "微博武汉动态"
+      url: "https://rsshub.rssforever.com/weibo/search/武汉"
+      max_age_days: 1
+    - id: "zhihu-wuhan"
+      name: "知乎武汉讨论"
+      url: "https://rsshub.rssforever.com/zhihu/search/武汉"
+      max_age_days: 2
+    - id: "douyin-wuhan"
+      name: "抖音武汉热点"
+      url: "https://rsshub.rssforever.com/douyin/search/武汉"
+      max_age_days: 1
+    
+    # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    # 🌐 全国媒体武汉内容
+    # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    - id: "huanqiu-china"
+      name: "环球网国内"
+      url: "https://rsshub.rssforever.com/huanqiu/news/china"
+      max_age_days: 2
+    - id: "thepaper-china"
+      name: "澎湃新闻时事"
+      url: "https://rsshub.rssforever.com/thepaper/channel/25950"
+      max_age_days: 2
+    - id: "yicai-quyu"
+      name: "第一财经区域"
+      url: "https://rsshub.rssforever.com/yicai/news/quyu"
+      max_age_days: 2
+    
+    # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    # 🚌 垂直领域
+    # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    - id: "wuhan-weather"
+      name: "武汉天气"
+      url: "https://rsshub.rssforever.com/weather/zh/101200101"
+      max_age_days: 1
+    - id: "wuhan-metro"
+      name: "武汉地铁"
+      url: "https://rsshub.rssforever.com/wuhan/metro"
+      max_age_days: 1
+    - id: "wuhan-tourism"
+      name: "武汉旅游"
+      url: "https://rsshub.rssforever.com/wuhan/tourism"
+      max_age_days: 3
+    
+    # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    # 🌍 保留原配置源（按需启用）
+    # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     - id: "hacker-news"
       name: "Hacker News"
       url: "https://hnrss.org/frontpage"
-
+      enabled: false
     - id: "ruanyifeng"
       name: "阮一峰的网络日志"
       url: "http://www.ruanyifeng.com/blog/atom.xml"
       enabled: false
-
     - id: "yahoo-finance"
       name: "雅虎财经"
       url: "https://finance.yahoo.com/news/rssindex"
-
+      enabled: false
     - id: "qqxw"
       name: "全球新闻"
       url: "https://www.bing.com/news/search?q=全球新闻&format=RSS"
       max_age_days: 10000
-
-    - id: "whyw"
-      name: "武汉要闻"
-      url: "https://rsshub.rssforever.com/gov/wuhan/sy/whyw"
-      max_age_days: 10000
+    - id: "qqxw1"
+      name: "环球热点"
+      url: "https://rsshub.rssforever.com/52hrtt/global"
+      max_age_days: 100000
 
 
 
