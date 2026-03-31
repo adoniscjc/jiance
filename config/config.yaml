@@ -133,8 +133,9 @@ rss:
 
     - id: "whyw"
       name: "武汉要闻"
-      url: "https://rsshub.app/gov/wuhan/sy/whyw"
+      url: "https://rsshub.rssforever.com/gov/wuhan/sy/whyw"
       max_age_days: 10000
+
 
 
 
