@@ -117,6 +117,16 @@ rss:
       name: "武汉大学"
       url: "https://rsshub.rssforever.com/whu/news"
       max_age_days: 10000
+      
+    - id: "weiboguanjianci"
+      name: "微博关键词"
+      url: "https://rsshub.app/weibo/keyword/%E6%AD%A6%E6%B1%89"
+      max_age_days: 10000
+      
+    - id: "weibochaohua"
+      name: "微博超话"
+      url: "https://rsshub.app/weibo/super_index/100808ad9efa2f14d42f7d14ef876725909e27/sort_time"
+      max_age_days: 10000
     
     - id: "baidu-wuhan-news"
       name: "百度武汉新闻"
