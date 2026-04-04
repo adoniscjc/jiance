@@ -104,7 +104,7 @@ rss:
   freshness_filter:
     enabled: false                     # 是否启用新鲜度过滤（默认启用）
 
-    max_age_days: 1                   # 最大文章年龄（天）
+    max_age_days: 10000                   # 最大文章年龄（天）
                                       # - 正整数：只推送 N 天内的文章
                                       # - 0：禁用过滤，推送所有文章
 
@@ -129,51 +129,30 @@ rss:
     - id: "baidu-wuhan"
       name: "百度武汉新闻"
       url: "https://rsshub.rssforever.com/baidu/search/news?keyword=武汉"
-      max_age_days: 110000
+      max_age_days: 10000
     
     - id: "weibo-wuhan"
       name: "微博武汉热搜"
       url: "https://rsshub.rssforever.com/weibo/search/hot?q=武汉"
-      max_age_days: 110000
+      max_age_days: 10000
     
     - id: "zhihu-wuhan"
       name: "知乎武汉话题"
       url: "https://rsshub.rssforever.com/zhihu/topic/武汉"
-      max_age_days: 210000
+      max_age_days: 10000
     
     # ✅ 补充真实存在的全国媒体源
     - id: "thepaper-hubei"
       name: "澎湃新闻湖北"
       url: "https://rsshub.rssforever.com/thepaper/column/27830"  # 澎湃湖北频道ID
-      max_age_days: 210000
+      max_age_days: 10000
     
     - id: "xinhuanet-hubei"
       name: "新华网湖北"
       url: "https://rsshub.rssforever.com/xinhuanet/region/hb"
-      max_age_days: 210000
-    # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-    # 🌍 保留原配置源（按需启用）
-    # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-    - id: "hacker-news"
-      name: "Hacker News"
-      url: "https://hnrss.org/frontpage"
-      enabled: false
-    - id: "ruanyifeng"
-      name: "阮一峰的网络日志"
-      url: "http://www.ruanyifeng.com/blog/atom.xml"
-      enabled: false
-    - id: "yahoo-finance"
-      name: "雅虎财经"
-      url: "https://finance.yahoo.com/news/rssindex"
-      enabled: false
-    - id: "qqxw"
-      name: "全球新闻"
-      url: "https://www.bing.com/news/search?q=全球新闻&format=RSS"
       max_age_days: 10000
-    - id: "qqxw1"
-      name: "环球热点"
-      url: "https://rsshub.rssforever.com/52hrtt/global"
-      max_age_days: 100000
+
+
 
 
 
@@ -312,11 +291,11 @@ display:
     hotlist: true # 热榜区域（关键词匹配 / AI 智能筛选）
     rss: true # RSS 订阅区域
     standalone: true # 独立展示区（完整热榜/RSS，不受关键词过滤）
-    ai_analysis: true # AI 分析区域
+    ai_analysis: false # AI 分析区域
   standalone:
     platforms: [] # 热榜平台 ID 列表（如 ["zhihu", "weibo"]）
-    rss_feeds: [      "wuhan-gov-whyw","baidu-wuhan","weibo-wuhan","thepaper-hubei","xinhuanet-hubei","whu-news","zhihu-wuhan"]
-    max_items:0                   # 每个源最多展示条数（0=不限制）
+    rss_feeds: ["qqxw","whyw"] # RSS 源 ID 列表（如 ["hacker-news"]）
+    max_items: 20                     # 每个源最多展示条数（0=不限制）
 
 
 # ===============================================================
