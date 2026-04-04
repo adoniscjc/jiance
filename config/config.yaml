@@ -167,7 +167,26 @@ rss:
       name: "武汉天气预报"
       url: "https://rsshub.rssforever.com/weather/zh/101200101"
       max_age_days: 10000
-
+      
+    - id: "hubeirb"
+      name: "湖北日报"
+      url: "https://rsshub.rssforever.com/hubeirb"
+      max_age_days: 10000
+    
+    - id: "wuhanwanbao"
+      name: "武汉晚报"
+      url: "https://rsshub.rssforever.com/wuhanwanbao"
+      max_age_days: 10000
+    
+    - id: "toutiao-wuhan"
+      name: "今日头条武汉"
+      url: "https://rsshub.rssforever.com/jinritoutiao/search?keyword=武汉"
+      max_age_days: 10000
+    
+    - id: "xiaohongshu-wuhan"
+      name: "小红书武汉"
+      url: "https://rsshub.rssforever.com/xiaohongshu/search?q=武汉"
+      max_age_days: 10000
 
 
 
@@ -309,7 +328,7 @@ display:
     ai_analysis: false # AI 分析区域
   standalone:
     platforms: [] # 热榜平台 ID 列表（如 ["zhihu", "weibo"]）
-    rss_feeds: ["qqxw","whyw"] # RSS 源 ID 列表（如 ["hacker-news"]）
+    rss_feeds: ["wuhan-gov-whyw", "wuhan-gov-gg", "hubei-gov", "whu-news", "baidu-wuhan-news", "weibo-wuhan-search", "zhihu-wuhan", "douyin-wuhan", "tieba-wuhan", "thepaper-hubei", "xinhuanet-hubei", "weather-wuhan", "changjiangrb", "hubeirb", "wuhanwanbao", "toutiao-wuhan", "xiaohongshu-wuhan"]
     max_items: 20                     # 每个源最多展示条数（0=不限制）
 
 
