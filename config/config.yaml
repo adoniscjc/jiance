@@ -213,6 +213,57 @@ rss:
       url: "https://rsshub.rssforever.com/douban/group/wuhan"
       max_age_days: 10000
 
+          # 新增10个武汉相关RSS源
+    - id: "wuhan-cnhan"
+      name: "汉网（长江日报报业集团）"
+      url: "http://m.cnhan.com/index.php?m=content&c=rss&catid=991&siteid=5"
+      max_age_days: 10000
+    
+    - id: "wuhan-jingchu"
+      name: "荆楚网-武汉频道"
+      url: "https://rsshub.rssforever.com/cnhubei/wh"
+      max_age_days: 10000
+    
+    - id: "wuhan-gov"
+      name: "武汉市人民政府-民生关切"
+      url: "https://rsshub.rssforever.com/wuhan/gov/rdhy"
+      max_age_days: 10000
+    
+    - id: "wuhan-edu"
+      name: "武汉教育资讯"
+      url: "https://rsshub.rssforever.com/weibo/user/2265129775"
+      max_age_days: 10000
+    
+    - id: "wuhan-house"
+      name: "武汉房产楼市资讯"
+      url: "https://rsshub.rssforever.com/weibo/user/1910559837"
+      max_age_days: 10000
+    
+    - id: "wuhan-traffic"
+      name: "武汉交通出行"
+      url: "https://rsshub.rssforever.com/weibo/user/1867878923"
+      max_age_days: 10000
+    
+    - id: "wuhan-donghu"
+      name: "武汉东湖高新区政务"
+      url: "https://rsshub.rssforever.com/wehdz/gov"
+      max_age_days: 10000
+    
+    - id: "wuhan-food"
+      name: "武汉美食生活"
+      url: "https://rsshub.rssforever.com/douban/group/wuhanfood"
+      max_age_days: 10000
+    
+    - id: "wuhan-travel"
+      name: "武汉旅游玩乐"
+      url: "https://rsshub.rssforever.com/mafengwo/place/10065"
+      max_age_days: 10000
+    
+    - id: "wuhan-tech"
+      name: "武汉光谷科技"
+      url: "https://rsshub.rssforever.com/weibo/user/5667192839"
+      max_age_days: 10000
+
 
     # 自定义源示例
     # - id: "custom-feed"
@@ -351,7 +402,7 @@ display:
     ai_analysis: false # AI 分析区域
   standalone:
     platforms: [] # 热榜平台 ID 列表（如 ["zhihu", "weibo"]）
-    rss_feeds: ["wuhan-gov-whyw", "wuhan-gov-gg", "hubei-gov", "whu-news", "baidu-wuhan-news", "weibo-wuhan-search", "zhihu-wuhan", "douyin-wuhan", "tieba-wuhan", "thepaper-hubei", "xinhuanet-hubei", "weather-wuhan", "changjiangrb", "hubeirb", "wuhanwanbao", "toutiao-wuhan", "xiaohongshu-wuhan"]
+    rss_feeds: []
     max_items: 20                     # 每个源最多展示条数（0=不限制）
 
 
