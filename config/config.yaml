@@ -187,8 +187,31 @@ rss:
       name: "小红书武汉"
       url: "https://rsshub.rssforever.com/xiaohongshu/search?q=武汉"
       max_age_days: 10000
-
-
+      
+    - id: "wuhan-cjn"
+      name: "长江网-武汉本地新闻"
+      url: "https://rsshub.rssforever.com/cjn/news"
+      max_age_days: 10000
+    
+    - id: "wuhan-people"
+      name: "人民网-湖北武汉"
+      url: "https://rsshub.rssforever.com/people/hubei/wuhan"
+      max_age_days: 10000
+    
+    - id: "wuhan-thepaper"
+      name: "澎湃新闻-武汉专区"
+      url: "https://rsshub.rssforever.com/thepaper/channel/17079"
+      max_age_days: 10000
+    
+    - id: "wuhan-weibo"
+      name: "微博-武汉同城热搜"
+      url: "https://rsshub.rssforever.com/weibo/search/hot/武汉"
+      max_age_days: 10000
+    
+    - id: "wuhan-douban"
+      name: "豆瓣-武汉小组"
+      url: "https://rsshub.rssforever.com/douban/group/wuhan"
+      max_age_days: 10000
 
 
     # 自定义源示例
