@@ -113,25 +113,27 @@ rss:
   # - 正整数：覆盖全局设置，只推送此天数内的文章
   # - 0：禁用此频道的新鲜度过滤，推送所有文章
   feeds:
-    # ✅ 保留有效的政务源
-    - id: "wuhan-gov-whyw"
-      name: "武汉要闻"
-      url: "https://rsshub.rssforever.com/gov/wuhan/sy/whyw"
+    - id: "wuhan-gov-gg"
+      name: "武汉公告"
+      url: "https://rsshub.rssforever.com/gov/wuhan/gg"
       max_age_days: 10000
     
-    # ✅ 保留有效的高校源
+    - id: "hubei-gov"
+      name: "湖北省政府"
+      url: "https://rsshub.rssforever.com/gov/hubei"
+      max_age_days: 10000
+    
     - id: "whu-news"
       name: "武汉大学"
       url: "https://rsshub.rssforever.com/whu/news"
       max_age_days: 10000
     
-    # ✅ 替换为真实聚合源（关键修正！）
-    - id: "baidu-wuhan"
+    - id: "baidu-wuhan-news"
       name: "百度武汉新闻"
       url: "https://rsshub.rssforever.com/baidu/search/news?keyword=武汉"
       max_age_days: 10000
     
-    - id: "weibo-wuhan"
+    - id: "weibo-wuhan-search"
       name: "微博武汉热搜"
       url: "https://rsshub.rssforever.com/weibo/search/hot?q=武汉"
       max_age_days: 10000
@@ -141,17 +143,30 @@ rss:
       url: "https://rsshub.rssforever.com/zhihu/topic/武汉"
       max_age_days: 10000
     
-    # ✅ 补充真实存在的全国媒体源
+    - id: "douyin-wuhan"
+      name: "抖音武汉热点"
+      url: "https://rsshub.rssforever.com/douyin/search?q=武汉"
+      max_age_days: 10000
+    
+    - id: "tieba-wuhan"
+      name: "武汉吧"
+      url: "https://rsshub.rssforever.com/tieba/forum/武汉"
+      max_age_days: 10000
+    
     - id: "thepaper-hubei"
       name: "澎湃新闻湖北"
-      url: "https://rsshub.rssforever.com/thepaper/column/27830"  # 澎湃湖北频道ID
+      url: "https://rsshub.rssforever.com/thepaper/column/27830"
       max_age_days: 10000
     
     - id: "xinhuanet-hubei"
-      name: "新华网湖北"
+      name: "新华网湖北频道"
       url: "https://rsshub.rssforever.com/xinhuanet/region/hb"
       max_age_days: 10000
-
+    
+    - id: "weather-wuhan"
+      name: "武汉天气预报"
+      url: "https://rsshub.rssforever.com/weather/zh/101200101"
+      max_age_days: 10000
 
 
 
