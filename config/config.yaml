@@ -264,6 +264,60 @@ rss:
       url: "https://rsshub.rssforever.com/weibo/user/5667192839"
       max_age_days: 10000
 
+      # 权威本地媒体（真实RSS）
+    - id: "cnhan-rss"
+      name: "汉网（长江日报）- 武汉综合新闻"
+      url: "http://m.cnhan.com/index.php?m=content&c=rss&catid=970&siteid=5"
+      max_age_days: 10000
+    
+    - id: "cjrb-digital"
+      name: "长江日报数字报"
+      url: "https://cjrb.cjn.cn/rss/xml"
+      max_age_days: 10000
+    
+    - id: "whwb-digital"
+      name: "武汉晚报数字报"
+      url: "https://whwb.cjn.cn/rss/xml"
+      max_age_days: 10000
+    
+    # 省级权威媒体（真实RSS）
+    - id: "cnhubei-wh"
+      name: "荆楚网（湖北日报网）- 武汉频道"
+      url: "http://wh.cnhubei.com/rss"
+      max_age_days: 10000
+    
+    - id: "xinhuanet-hb"
+      name: "新华网湖北频道"
+      url: "http://www.xinhuanet.com/rss/hubei.xml"
+      max_age_days: 10000
+    
+    - id: "people-hb"
+      name: "人民网湖北频道"
+      url: "http://hb.people.com.cn/rss/rss_wh.xml"
+      max_age_days: 10000
+    
+    # 综合门户（真实RSS）
+    - id: "dachu-wuhan"
+      name: "腾讯大楚网-武汉新闻"
+      url: "https://rsshub.app/qq/zone/hb.qq.com"
+      max_age_days: 10000
+    
+    - id: "163-hb"
+      name: "网易湖北-武汉资讯"
+      url: "https://rsshub.app/163/news/hb"
+      max_age_days: 10000
+    
+    # 政务与社区（真实RSS）
+    - id: "wuhan-gov"
+      name: "武汉市政府-政务要闻"
+      url: "https://www.wuhan.gov.cn/rss/zwgk.xml"
+      max_age_days: 10000
+    
+    - id: "wuhan-bbs"
+      name: "长江论坛-武汉民生"
+      url: "https://bbs.cjn.cn/rss"
+  max_age_days: 10000
+
 
     # 自定义源示例
     # - id: "custom-feed"
