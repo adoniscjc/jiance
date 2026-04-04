@@ -57,6 +57,26 @@ platforms:
   sources:
     - id: "toutiao"
       name: "今日头条"
+    - id: "baidu"
+      name: "百度热搜"
+    - id: "wallstreetcn-hot"
+      name: "华尔街见闻"
+    - id: "thepaper"
+      name: "澎湃新闻"
+    - id: "bilibili-hot-search"
+      name: "bilibili 热搜"
+    - id: "cls-hot"
+      name: "财联社热门"
+    - id: "ifeng"
+      name: "凤凰网"
+    - id: "tieba"
+      name: "贴吧"
+    - id: "weibo"
+      name: "微博"
+    - id: "douyin"
+      name: "抖音"
+    - id: "zhihu"
+      name: "知乎"
 
 
 
@@ -93,16 +113,6 @@ rss:
   # - 正整数：覆盖全局设置，只推送此天数内的文章
   # - 0：禁用此频道的新鲜度过滤，推送所有文章
   feeds:
-    - id: "wuhan-gov-gg"
-      name: "武汉公告"
-      url: "https://rsshub.rssforever.com/gov/wuhan/gg"
-      max_age_days: 10000
-    
-    - id: "hubei-gov"
-      name: "湖北省政府"
-      url: "https://rsshub.rssforever.com/gov/hubei"
-      max_age_days: 10000
-    
     - id: "whu-news"
       name: "武汉大学"
       url: "https://rsshub.rssforever.com/whu/news"
@@ -113,191 +123,42 @@ rss:
       url: "https://rsshub.rssforever.com/baidu/search/news?keyword=武汉"
       max_age_days: 10000
     
-    - id: "weibo-wuhan-search"
-      name: "微博武汉热搜"
-      url: "https://rsshub.rssforever.com/weibo/search/hot?q=武汉"
+    - id: "xinhuanet-local"
+      name: "新华网地方联播"
+      url: "http://www.xinhuanet.com/local/news_province.xml"
       max_age_days: 10000
     
-    - id: "zhihu-wuhan"
-      name: "知乎武汉话题"
-      url: "https://rsshub.rssforever.com/zhihu/topic/武汉"
+    - id: "xinhuanet-politics"
+      name: "新华网时政频道"
+      url: "http://www.xinhuanet.com/politics/news_politics.xml"
       max_age_days: 10000
     
-    - id: "douyin-wuhan"
-      name: "抖音武汉热点"
-      url: "https://rsshub.rssforever.com/douyin/search?q=武汉"
+    - id: "people-hubei"
+      name: "人民网湖北频道"
+      url: "http://hb.people.com.cn/rss/index.xml"
       max_age_days: 10000
-    
-    - id: "tieba-wuhan"
-      name: "武汉吧"
-      url: "https://rsshub.rssforever.com/tieba/forum/武汉"
-      max_age_days: 10000
-    
-    - id: "thepaper-hubei"
-      name: "澎湃新闻湖北"
-      url: "https://rsshub.rssforever.com/thepaper/column/27830"
-      max_age_days: 10000
-    
-    - id: "xinhuanet-hubei"
-      name: "新华网湖北频道"
-      url: "https://rsshub.rssforever.com/xinhuanet/region/hb"
-      max_age_days: 10000
-    
-    - id: "weather-wuhan"
-      name: "武汉天气预报"
-      url: "https://rsshub.rssforever.com/weather/zh/101200101"
-      max_age_days: 10000
-      
-    - id: "hubeirb"
-      name: "湖北日报"
-      url: "https://rsshub.rssforever.com/hubeirb"
-      max_age_days: 10000
-    
-    - id: "wuhanwanbao"
-      name: "武汉晚报"
-      url: "https://rsshub.rssforever.com/wuhanwanbao"
-      max_age_days: 10000
-    
-    - id: "toutiao-wuhan"
-      name: "今日头条武汉"
-      url: "https://rsshub.rssforever.com/jinritoutiao/search?keyword=武汉"
-      max_age_days: 10000
-    
-    - id: "xiaohongshu-wuhan"
-      name: "小红书武汉"
-      url: "https://rsshub.rssforever.com/xiaohongshu/search?q=武汉"
-      max_age_days: 10000
-      
-    - id: "wuhan-cjn"
-      name: "长江网-武汉本地新闻"
-      url: "https://rsshub.rssforever.com/cjn/news"
-      max_age_days: 10000
-    
-    - id: "wuhan-people"
-      name: "人民网-湖北武汉"
-      url: "https://rsshub.rssforever.com/people/hubei/wuhan"
-      max_age_days: 10000
-    
-    - id: "wuhan-thepaper"
-      name: "澎湃新闻-武汉专区"
-      url: "https://rsshub.rssforever.com/thepaper/channel/17079"
-      max_age_days: 10000
-    
-    - id: "wuhan-weibo"
-      name: "微博-武汉同城热搜"
-      url: "https://rsshub.rssforever.com/weibo/search/hot/武汉"
-      max_age_days: 10000
-    
-    - id: "wuhan-douban"
-      name: "豆瓣-武汉小组"
+     
+   
+    - id: "douban-group-wuhan"
+      name: "豆瓣武汉小组"
       url: "https://rsshub.rssforever.com/douban/group/wuhan"
       max_age_days: 10000
-
-          # 新增10个武汉相关RSS源
-    - id: "wuhan-cnhan"
-      name: "汉网（长江日报报业集团）"
-      url: "http://m.cnhan.com/index.php?m=content&c=rss&catid=991&siteid=5"
+    
+    - id: "thepaper-wuhan"
+      name: "澎湃新闻武汉"
+      url: "https://rsshub.rssforever.com/channel/17079"
       max_age_days: 10000
     
-    - id: "wuhan-jingchu"
-      name: "荆楚网-武汉频道"
-      url: "https://rsshub.rssforever.com/cnhubei/wh"
+    # 政府网站真实RSS
+    - id: "wuhan-gov-news"
+      name: "武汉市政府要闻"
+      url: "https://rsshub.rssforever.com/gov/wuhan/sy/whyw"
       max_age_days: 10000
     
-    - id: "wuhan-gov"
-      name: "武汉市人民政府-民生关切"
-      url: "https://rsshub.rssforever.com/wuhan/gov/rdhy"
+    - id: "hubei-gov-news"
+      name: "湖北省政府要闻"
+      url: "http://www.hubei.gov.cn/zwgk/hbyw/"
       max_age_days: 10000
-    
-    - id: "wuhan-edu"
-      name: "武汉教育资讯"
-      url: "https://rsshub.rssforever.com/weibo/user/2265129775"
-      max_age_days: 10000
-    
-    - id: "wuhan-house"
-      name: "武汉房产楼市资讯"
-      url: "https://rsshub.rssforever.com/weibo/user/1910559837"
-      max_age_days: 10000
-    
-    - id: "wuhan-traffic"
-      name: "武汉交通出行"
-      url: "https://rsshub.rssforever.com/weibo/user/1867878923"
-      max_age_days: 10000
-    
-    - id: "wuhan-donghu"
-      name: "武汉东湖高新区政务"
-      url: "https://rsshub.rssforever.com/wehdz/gov"
-      max_age_days: 10000
-    
-    - id: "wuhan-food"
-      name: "武汉美食生活"
-      url: "https://rsshub.rssforever.com/douban/group/wuhanfood"
-      max_age_days: 10000
-    
-    - id: "wuhan-travel"
-      name: "武汉旅游玩乐"
-      url: "https://rsshub.rssforever.com/mafengwo/place/10065"
-      max_age_days: 10000
-    
-    - id: "wuhan-tech"
-      name: "武汉光谷科技"
-      url: "https://rsshub.rssforever.com/weibo/user/5667192839"
-      max_age_days: 10000
-
-      # 权威本地媒体（真实RSS）
-    - id: "cnhan-rss"
-      name: "汉网（长江日报）- 武汉综合新闻"
-      url: "http://m.cnhan.com/index.php?m=content&c=rss&catid=970&siteid=5"
-      max_age_days: 10000
-    
-    - id: "cjrb-digital"
-      name: "长江日报数字报"
-      url: "https://cjrb.cjn.cn/rss/xml"
-      max_age_days: 10000
-    
-    - id: "whwb-digital"
-      name: "武汉晚报数字报"
-      url: "https://whwb.cjn.cn/rss/xml"
-      max_age_days: 10000
-    
-    # 省级权威媒体（真实RSS）
-    - id: "cnhubei-wh"
-      name: "荆楚网（湖北日报网）- 武汉频道"
-      url: "http://wh.cnhubei.com/rss"
-      max_age_days: 10000
-    
-    - id: "xinhuanet-hb"
-      name: "新华网湖北频道"
-      url: "http://www.xinhuanet.com/rss/hubei.xml"
-      max_age_days: 10000
-    
-    - id: "people-hb"
-      name: "人民网湖北频道"
-      url: "http://hb.people.com.cn/rss/rss_wh.xml"
-      max_age_days: 10000
-    
-    # 综合门户（真实RSS）
-    - id: "dachu-wuhan"
-      name: "腾讯大楚网-武汉新闻"
-      url: "https://rsshub.app/qq/zone/hb.qq.com"
-      max_age_days: 10000
-    
-    - id: "163-hb"
-      name: "网易湖北-武汉资讯"
-      url: "https://rsshub.app/163/news/hb"
-      max_age_days: 10000
-    
-    # 政务与社区（真实RSS）
-    - id: "wuhan-gov"
-      name: "武汉市政府-政务要闻"
-      url: "https://www.wuhan.gov.cn/rss/zwgk.xml"
-      max_age_days: 10000
-    
-    - id: "wuhan-bbs"
-      name: "长江论坛-武汉民生"
-      url: "https://bbs.cjn.cn/rss"
-  max_age_days: 10000
-
 
     # 自定义源示例
     # - id: "custom-feed"
