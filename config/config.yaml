@@ -115,7 +115,7 @@ rss:
   feeds:
     - id: "whu-news"
       name: "平安武汉"
-      url: "http://192.168.3.6:1200/weibo/user/2418542712"
+      url: "http://5d0c5a53.r8.cpolar.cn/weibo/user/2418542712"
       max_age_days: 10000
 
     # 自定义源示例
