@@ -97,6 +97,7 @@ rss:
       url: "http://5d0c5a53.r8.cpolar.cn/weibo/user/2418542712"
       max_age_days: 10000
       
+    - id: "whudx"
       name: "武汉大学"
       url: "https://rsshub.rssforever.com/whu/news"
       max_age_days: 10000
