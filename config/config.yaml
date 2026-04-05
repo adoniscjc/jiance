@@ -115,7 +115,7 @@ rss:
   feeds:
     - id: "whu-news"
       name: "平安武汉"
-      url: "https://rsshub.app/weibo/user/2418542712"
+      url: "https://rsshub.rssforever.com/weibo/user/2418542712"
       max_age_days: 10000
 
     # 自定义源示例
