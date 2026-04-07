@@ -57,6 +57,10 @@ platforms:
   sources:
     - id: "weibo"
       name: "微博"
+    - id: "toutiao"
+      name: "今日头条"
+    - id: "baidu"
+      name: "百度热搜"
 
 
 
