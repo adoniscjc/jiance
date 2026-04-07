@@ -94,61 +94,44 @@ rss:
   # - 0：禁用此频道的新鲜度过滤，推送所有文章
   feeds:
     - id: "whu-news"
-      name: "平安武汉"
-      url: "http://5d0c5a53.r8.cpolar.cn/weibo/user/2418542712"
+      name: "微博：平安武汉"
+      url: "http://2bb03b13.r8.cpolar.cn/weibo/user/2418542712"
       max_age_days: 10000
-    - id: "whudx"
-    
-      name: "武汉大学"
-      url: "https://rsshub.rssforever.com/whu/news"
-      max_age_days: 10000
+
       
     - id: "weiboguanjianci"
-      name: "微博关键词"
-      url: "http://5d0c5a53.r8.cpolar.cn/weibo/keyword/%E6%AD%A6%E6%B1%89"
+      name: "微博：关键词"
+      url: "http://2bb03b13.r8.cpolar.cn/weibo/keyword/%E6%AD%A6%E6%B1%89"
       max_age_days: 10000
       
     - id: "weibochaohua"
-      name: "微博超话"
-      url: "http://5d0c5a53.r8.cpolar.cn/weibo/super_index/100808ad9efa2f14d42f7d14ef876725909e27/sort_time"
+      name: "微博：超话"
+      url: "http://2bb03b13.r8.cpolar.cn/weibo/super_index/100808ad9efa2f14d42f7d14ef876725909e27/sort_time"
       max_age_days: 10000
     
     - id: "baidu-wuhan-news"
-      name: "百度武汉新闻"
-      url: "http://5d0c5a53.r8.cpolar.cn/baidu/search/news?keyword=武汉"
-      max_age_days: 10000
-      
-    - id: "xinhuanet-local"
-      name: "新华网地方联播"
-      url: "http://www.xinhuanet.com/local/news_province.xml"
+      name: "百度：武汉新闻"
+      url: "http://2bb03b13.r8.cpolar.cn/baidu/search/news?keyword=武汉"
       max_age_days: 10000
       
     - id: "wuhanjj"
-      name: "武汉交警抖音"
-      url: " http://5d0c5a53.r8.cpolar.cn/douyin/user/MS4wLjABAAAAmPmTcWkg-vjW2FB2pYrM_8hS1jijHzSIshlm7dwTV1o"
+      name: "抖音：武汉交警"
+      url: "http://2bb03b13.r8.cpolar.cn/douyin/user/MS4wLjABAAAAmPmTcWkg-vjW2FB2pYrM_8hS1jijHzSIshlm7dwTV1o"
       max_age_days: 10000
      
-    
-    - id: "xinhuanet-politics"
-      name: "新华网时政频道"
-      url: "http://www.xinhuanet.com/politics/news_politics.xml"
-      max_age_days: 10000
-    
-   
-    - id: "douban-group-wuhan"
-      name: "豆瓣武汉小组"
-      url: "http://5d0c5a53.r8.cpolar.cn/douban/group/wuhan"
+      - id: "douban-group-wuhan"
+      name: "豆瓣：武汉小组"
+      url: "http://2bb03b13.r8.cpolar.cn/douban/group/wuhan"
       max_age_days: 10000
     
     - id: "thepaper-wuhan"
-      name: "澎湃新闻武汉"
-      url: "http://5d0c5a53.r8.cpolar.cn/channel/17079"
+      name: "澎湃新闻"
+      url: "http://2bb03b13.r8.cpolar.cn/channel/17079"
       max_age_days: 10000
     
-    # 政府网站真实RSS
     - id: "wuhan-gov-news"
       name: "武汉市政府要闻"
-      url: "http://5d0c5a53.r8.cpolar.cn/gov/wuhan/sy/whyw"
+      url: "http://2bb03b13.r8.cpolar.cn/gov/wuhan/sy/whyw"
       max_age_days: 10000
     
       
