@@ -99,7 +99,7 @@ rss:
   feeds:
     - id: "whu-news"
       name: "平安武汉"
-      url: "http://2bb03b13.r8.cpolar.cn/weibo/user/2418542712"
+      url: "http://2f8bce76.r8.cpolar.cn/weibo/user/2418542712"
       max_age_days: 10000
 
       
